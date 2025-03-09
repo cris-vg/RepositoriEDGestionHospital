@@ -1,0 +1,18 @@
+package com.dam.cris;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Hospital hospital = new Hospital();
+		
+		hospital.addMedico(new Medico(234, "Manolo Ruiz", 20021, "Psiquiatria"));
+		hospital.addPaciente(new Paciente()); //TODO: Añadir datos
+		hospital.addConsulta(new Consulta());//TODO: Añadir datos
+		//TODO: Actualitzar UML
+		System.out.println(hospital.infoDatosMedicos());
+		System.out.println(hospital.infoDatosPacientes());
+		System.out.println(hospital.infoDatosConsultas());
+	}
+
+}

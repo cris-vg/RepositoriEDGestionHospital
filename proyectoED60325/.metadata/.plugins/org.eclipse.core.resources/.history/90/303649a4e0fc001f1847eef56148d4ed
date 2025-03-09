@@ -1,0 +1,28 @@
+package com.dam.cris;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Hospital hospital = new Hospital();
+		
+		hospital.addMedico(new Medico(11, "Manolo Ruiz", 20021, "Psiquiatria"));
+		hospital.addMedico(new Medico(1, "Dr. Juan Pérez", 123456, "Cardiología"));
+	        hospital.addMedico(new Medico(2, "Dra. María López", 234567, "Pediatría"));
+	        hospital.addMedico(new Medico(3, "Dr. Carlos Gómez", 345678, "Neurología"));
+	        hospital.addMedico(new Medico(4, "Dra. Ana Martínez", 456789, "Dermatología"));
+	        hospital.addMedico(new Medico(5, "Dr. Luis Rodríguez", 567890, "Ortopedia"));
+	        hospital.addMedico(new Medico(6, "Dra. Sofía Fernández", 678901, "Ginecología"));
+	        hospital.addMedico(new Medico(7, "Dr. Eduardo Sánchez", 789012, "Oftalmología"));
+	        hospital.addMedico(new Medico(8, "Dra. Patricia Ramírez", 890123, "Psiquiatría"));
+	        hospital.addMedico(new Medico(9, "Dr. Roberto Díaz", 901234, "Endocrinología"));
+	        hospital.addMedico(new Medico(10, "Dra. Gabriela Herrera", 102345, "Medicina Interna"))
+		hospital.addPaciente(new Paciente()); //TODO: Añadir datos
+		hospital.addConsulta(new Consulta());//TODO: Añadir datos
+		//TODO: Actualizar UML con funciones addMedico(), addPaciente() y addConsulta()
+		System.out.println(hospital.infoDatosMedicos());
+		System.out.println(hospital.infoDatosPacientes());
+		System.out.println(hospital.infoDatosConsultas());
+	}
+
+}
